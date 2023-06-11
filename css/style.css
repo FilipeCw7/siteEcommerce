@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0f0f0f !important;
+
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background: none;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #85724a;
+    border-radius: 20px;
+}
+
+/* Nav Bar principal */
+
+.menu-royal {
+    background-color: #000000;
+    color: #85724a;
+    font-family: 'Goudy Bookletter 1911', serif;
+
+}
+
+.menu-royal ul li a {
+    color: #85724a;
+    font-weight: bold;
+
+}
+
+.menu-royal input {
+    color: #85724a;
+    border: none;
+    border-bottom: 2px solid #85724a;
+    background: transparent;
+    outline: none;
+}
+
+.menu-royal input:focus {
+    color: #85724a;
+    border: none;
+    border-bottom: 2px solid #85724a;
+    background: transparent;
+    outline: none;
+}
+
+.menu-royal input::placeholder {
+    color: #85724a;
+}
+
+.menu-royal .navbar-toggler {
+    color: #85724a;
+}
+
+.menu-royal .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(133, 114, 74, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .cart {
+    font-size: 20px;
+}
+
+.navbar-nav .cart:hover {
+    cursor: pointer;
+}
+
+/* Nav Bar principal */
+
+/* Form filtro de produtos */
+
+.form-control-custom {
+    width: 500px !important;
+    font-size: 1.2rem;
+}
+
+.form-group select {
+    background: #363636;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    color: #85724a;
+}
+
+.form-group select:focus {
+    background: #363636;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    color: #85724a;
+}
+
+li button i {
+    color: #85724a;
+    font-size: 20px;
+}
+
+.filter-prod {
+    background: #292929;
+    border-radius: 16px;
+    padding: 20px;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.filter-prod h5,
+p {
+    padding: 2px;
+    color: #ffffff;
+
+}
+
+.filter-prod input {
+    background: #363636;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    color: #85724a;
+}
+
+.filter-prod input:focus {
+    background: #363636;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    color: #85724a;
+}
+
+.filter-prod input::placeholder {
+    color: #85724a;
+}
+
+.btn-enviar {
+    background: #85724a;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+
+}
+
+/* Form filtro de produtos */
+
+.info {
+    background: #292929;
+    border-radius: 16px;
+    padding: 20px;
+    color: #85724a;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.info input {
+    background: #363636;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    color: #85724a;
+}
+
+.info input:focus {
+    background: #363636;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    color: #85724a;
+}
+
+.btn-form-info {
+    background: #85724a;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #000000;
+    color: #85724a;
+    padding: 20px;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: #85724a;
+}
+
+footer h6 {
+    text-transform: uppercase;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #85724a;
+}
+
+footer p i {
+    color: #85724a;
+}
+
+.card {
+    background: #292929 !important;
+    margin: 1px;
+    border-radius: 16px;
+    color: #85724a;
+    font-family: 'Goudy Bookletter 1911', serif;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 13em;
+    margin-top: 2em;
+}
+
+.card-img-top {
+    border-radius: 16px;
+    padding: 10px;
+    height: 15rem;
+    /* defina a altura desejada */
+    overflow: hidden;
+    /* esconde qualquer conteúdo que exceda a altura definida */
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+}
+
+.card-img-top img {
+    border-radius: 16px;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    /* opcional, para ajustar a proporção da imagem */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-rating {
+    color: #ffc107;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-price {
+    font-size: 1.5rem;
+}
+
+.card-container {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    /* para garantir que a altura do contêiner corresponda ao seu conteúdo */
+}
+
+.img-container {
+    float: left;
+    width: 30%;
+    margin-right: 10px;
+}
+
+.text-container {
+    float: right;
+    width: 70%;
+}
+
+.recent {
+    background: #292929;
+    border-radius: 16px;
+    padding: 10px;
+    color: #85724a;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+
+.recent h5,
+span {
+    font-weight: bolder;
+}
+
+.img-recent img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.item-recent span i {
+    color: #ffc107;
+    font-size: 1 rem;
+    margin-bottom: 0.5rem;
+}
+
+.pagamento {
+    width: 50px;
+}
+
+.list-details {
+    display: none;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+.list-details img {
+    border-radius: 16px;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    padding: 10px;
+    height: 15rem;
+    /* defina a altura desejada */
+    overflow: hidden;
+    /* esconde qualquer conteúdo que exceda a altura definida */
+    object-fit: cover;
+    height: 350px;
+    width: 350px;
+}
+
+.list-details .title {
+    color: #85724a;
+    font-size: 40px;
+
+}
+
+.list-details .price {
+    color: #85724a;
+    font-size: 35px;
+
+}
+
+.list-details .category {
+    color: #fffdfa;
+}
+
+.list-details .season {
+    color: #fffdfa;
+}
+
+.content-card {
+    text-decoration: none;
+}
+
+.content-card:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 420px) {
+
+    .navbar-text {
+        font-size: 1.5em;
+    }
+
+    .form-control-custom {
+        width: 70% !important;
+        font-size: 1.2rem;
+    }
+
+    .recent {
+        margin-top: 2em;
+    }
+
+    .item-recent {
+        text-align: center;
+    }
+
+    .card {
+        width: 92%;
+        border-radius: 16px !important;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .item-recent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .item-recent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-recent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-recent img {
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .item-recent span i {
+        color: #ffc107;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .list-details .title {
+        color: #85724a;
+        font-size: 30px;
+    
+    }
+
+}
+
+@media (max-width: 800px) {
+    .item-recent {
+        text-align: center;
+    }
+
+    .list-details{
+        text-align: center;
+        padding: 10px;
+    }
+}
